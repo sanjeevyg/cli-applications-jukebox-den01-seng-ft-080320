@@ -38,13 +38,13 @@ def run(songs)
   until input == "exit" do
     if input == "list"
       list(songs)
+      input = gets.strip
     elsif input == "help"
       help
+      input = gets.strip
     elsif input == "play"
       play(songs)
-      if input == "exit"
-        exit_jukebox
-      end 
+      input = gets.strip
     elsif input == "exit"
       exit_jukebox
     end 
