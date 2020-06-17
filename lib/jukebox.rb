@@ -38,12 +38,15 @@ def run(songs)
   until input == "exit" do
     if input == "list"
       list(songs)
+      puts "Please enter a command:"
       input = gets.strip
     elsif input == "help"
       help
+      puts "Please enter a command:"
       input = gets.strip
     elsif input == "play"
       play(songs)
+      puts "Please enter a command:"
       input = gets.strip
     elsif input == "exit"
       exit_jukebox
